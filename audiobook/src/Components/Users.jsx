@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Users.css';
 
-const Slider = () => {
+const User = () => {
   const [data, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -66,4 +66,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default User;

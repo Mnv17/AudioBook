@@ -1,8 +1,10 @@
 // Slider.jsx
 import React, { useState, useEffect } from 'react';
 import AudioPlayer from './AudioPlayer'; 
+import { useNavigate } from 'react-router-dom';
 
 const Slider = () => {
+    const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [audioPlayerIndex, setAudioPlayerIndex] = useState(null);
@@ -35,6 +37,7 @@ const Slider = () => {
 
   const handleSlideClick = (index) => {
     setAudioPlayerIndex(index);
+    navigate("/audio");
   };
 
   useEffect(() => {
@@ -63,7 +66,7 @@ const Slider = () => {
           <button onClick={handleNext}>Next</button>
         </div>
       </div>
-      {audioPlayerIndex !== null && <AudioPlayer audioUrl={data[audioPlayerIndex].audioUrl} />}
+      {/* {audioPlayerIndex !== null &&  <AudioPlayer audioUrl={data[audioPlayerIndex].audioUrl} />} */}
     </>
   );
 };

@@ -1,9 +1,13 @@
-.icons {
+
+@media (min-width: 1024px) {
+   
+
+    .icons {
     width: 100%;
     height: 64px;
     flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
 }
 
@@ -106,4 +110,173 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer div:nth-child(1){
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.footer div:nth-child(2){
+    color: var(--Pure-White, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Avenir;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; 
+opacity: 0.6;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+
+}
+
+@media (min-width: 10px) and (max-width: 1023px) {
+    .icons {
+        width: 100%;
+        height: 64px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    .arrow {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+    
+    .share {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+    
+    .rectangle {
+        width: 90%;
+        margin: 0 auto;
+        height: 169px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: url("../Images/Rectangle.png"), lightgray 50% / cover no-repeat, #2E3035;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    }
+    
+    .fund {
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        color: var(--Pure-White, #FFF);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 32px;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    .chapter2 {
+        width: 100%;
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    .notes {
+        width: 220px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: var(--Card-on-Dark, #2E3035);
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .notes p {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        justify-content: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .quiz {
+        width: 220px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: var(--Card-on-Dark, #2E3035);
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+        margin: 0 auto;
+    }
+    
+    .quiz p {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    .functions {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .footer div:nth-child(1){
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+        opacity: 0.6;
+    }
+    
+    .footer div:nth-child(2){
+        color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    opacity: 0.6;
+    font-family: 'Open Sans', sans-serif;
+
+    }
 }
