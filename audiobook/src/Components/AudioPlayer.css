@@ -1,0 +1,109 @@
+.icons {
+    width: 100%;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    /* transform: rotate(-30deg); */
+    flex-shrink: 0;
+}
+
+.share {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.rectangle {
+    width: 326px;
+    margin: 0 auto;
+    height: 169px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: url("../Images/Rectangle.png"), lightgray 50% / cover no-repeat, #2E3035;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.fund {
+    width: 326px;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--Pure-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.chapter2 {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.notes {
+    width: 220px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--Card-on-Dark, #2E3035);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+}
+
+.notes p {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    justify-content: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quiz {
+    width: 220px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--Card-on-Dark, #2E3035);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+}
+
+.quiz p {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.functions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}

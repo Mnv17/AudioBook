@@ -1,0 +1,218 @@
+
+@media (min-width: 1024px) {
+.course {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.text {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    opacity: 0.6;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Slider1.css */
+
+.slider-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+}
+
+.image2 {
+    width: 280px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+}
+
+.name2 {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.chapters {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    opacity: 0.6;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.hours {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    opacity: 0.6;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+}
+
+@media (min-width: 10px) and (max-width: 1023px) {
+    .course {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .text {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 8px;
+        letter-spacing: 0.2px;
+        opacity: 0.6;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    /* Slider1.css */
+    
+    .slider-container {
+        width: 80%;
+        margin: 25px auto;
+        overflow: hidden;
+    
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .image2 {
+        width: 80%;
+        height: 160px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    }
+    
+    .name2 {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .chapters {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        opacity: 0.6;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .hours {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        opacity: 0.6;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .controls button {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}

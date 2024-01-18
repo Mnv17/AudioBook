@@ -1,0 +1,121 @@
+
+@media (min-width: 1024px) {
+.head {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.header{
+    line-height: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.name {
+    color: #f6f8fd;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.name span {
+    background: linear-gradient(to right, #da66bd,  #da66bd, #5385f0); /* Gradient background for the span */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.line {
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.image {
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 400px;
+    background: url('../Images/image\ 1.png'), lightgray 50% / cover no-repeat;
+}
+}
+
+@media (min-width: 10px) and (max-width: 1023px) {
+    .head {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    .header{
+        line-height: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .name {
+        color: #f6f8fd;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 15px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .name span {
+        background: linear-gradient(to right, #da66bd,  #da66bd, #5385f0); /* Gradient background for the span */
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .line {
+        color: var(--Pure-White, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Avenir;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.2px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    
+    .image {
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 400px;
+        background: url('../Images/image\ 1.png'), lightgray 50% / cover no-repeat;
+    }
+  }
+  
