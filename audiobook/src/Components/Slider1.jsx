@@ -1,13 +1,15 @@
 // Slider.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AudioPlayer from './AudioPlayer'; 
 import { useNavigate } from 'react-router-dom';
 
 const Slider = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [audioPlayerIndex, setAudioPlayerIndex] = useState(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,16 +25,21 @@ const Slider = () => {
     fetchData();
   }, []);
 
-  const updateSliderPosition = (index) => {
-    setCurrentIndex(index);
+  const handleDragStart = (e) => {
+    setIsDragging(true);
+    e.preventDefault();
   };
 
-  const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % data.length);
+  const handleDragEnd = () => {
+    setIsDragging(false);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((currentIndex - 1 + data.length) % data.length);
+  const handleDragMove = (e) => {
+    if (isDragging) {
+      const containerWidth = containerRef.current.clientWidth;
+      const newPosition = e.clientX / containerWidth;
+      setCurrentIndex(Math.floor(newPosition * data.length));
+    }
   };
 
   const handleSlideClick = (index) => {
@@ -41,16 +48,29 @@ const Slider = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 300000);  
+    const interval = setInterval(() => {
+      if (!isDragging) {
+        setCurrentIndex((currentIndex + 1) % data.length);
+      }
+    }, 300000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, data]);
+  }, [currentIndex, data, isDragging]);
 
   return (
     <>
       <div className='course'>Courses for you</div>
       <div className='text'>Listen to byte-sized audio courses from top thinkers</div>
-      <div className='slider-container'>
+      <div
+        className='slider-container'
+        ref={containerRef}
+        onMouseDown={handleDragStart}
+        onMouseUp={handleDragEnd}
+        onMouseMove={handleDragMove}
+        onTouchStart={handleDragStart}
+        onTouchEnd={handleDragEnd}
+        onTouchMove={handleDragMove}
+      >
         <div className='slider' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {data.map((item, index) => (
             <div key={index} className='slide' onClick={() => handleSlideClick(index)}>
@@ -60,10 +80,6 @@ const Slider = () => {
               <p className='hours'>Hours: {item.hours}</p>
             </div>
           ))}
-        </div>
-        <div className='controls'>
-          <button onClick={handlePrev}>Prev</button>
-          <button onClick={handleNext}>Next</button>
         </div>
       </div>
       {/* {audioPlayerIndex !== null &&  <AudioPlayer audioUrl={data[audioPlayerIndex].audioUrl} />} */}

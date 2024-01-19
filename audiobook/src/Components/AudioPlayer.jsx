@@ -14,7 +14,7 @@ export default function AudioPlayer() {
   useEffect(() => {
     const audioElement = audioRef.current;
   
-    if (!audioElement) return; // Add a check to ensure audioElement is not null
+    if (!audioElement) return; 
   
     const loadedMetadataHandler = () => {
       setDuration(audioElement.duration);
